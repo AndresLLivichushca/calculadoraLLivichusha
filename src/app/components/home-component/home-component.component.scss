@@ -1,0 +1,86 @@
+
+
+header {
+    background: #118a2f;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #35424a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+
+h2 {
+    color: #35424a;
+}
+
+
+
+/* Efecto de sombreado al pasar el cursor */
+nav a:hover {
+    color: #2a2f35; /* Color al pasar el cursor */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombreado */
+    background-color: #f0f0f0; /* Fondo al pasar el cursor */
+    border-radius: 5px; /* Bordes redondeados para el fondo */
+}
+
+
+/* Estilos para la sección de inicio */
+#inicio {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el texto */
+}
+
+#inicio h2 {
+    color: #35424a;
+}
+
+#inicio p {
+    color: #666666;
+    margin: 10px 0;
+}
+
+#inicio button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#inicio button:hover {
+    background: #2a2f35;
+}
+
+/* Estilos para centrar la imagen dentro de su contenedor */
+.img-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente si es necesario */
+    margin: 20px 0;          /* Espaciado entre las imágenes */
+  }
+  
+  /* Estilos para la imagen */
+  .centered-img {
+    max-width: 100%;        /* Asegura que la imagen no se salga del contenedor */
+    height: auto;           /* Mantiene la proporción de la imagen */
+    border-radius: 10px;    /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+  }
+  

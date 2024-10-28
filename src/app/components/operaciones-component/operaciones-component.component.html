@@ -1,0 +1,30 @@
+ <!-- Formulario para agregar cursos -->
+ <section id="agregar-curso">
+    <h2>Registrar nueva operacion</h2>
+    <form id="course-form" (ngSubmit)="agregarOperacion($event)">
+        <label for="course-name">Ingrese el numero 1:</label>
+        <input type="number" id="numero1" [(ngModel)]="numero1" required name="course-name">
+
+        <label for="instructor-name">Ingrese el numero2:</label>
+        <input type="number" id="numero2" [(ngModel)]="numero2" required name="instructor-name">
+        <button type="submit">Agregar Operaciones</button>
+    </form>
+</section>
+
+<div *ngFor="let operacion of operaciones; let i = index" class="curso-card">
+    <h3>Lista de Operaciones ingresadas</h3>
+  <p>____________________________________________________________________________</p>
+  <p><strong>Numero 1:</strong> {{ operacion.numero1 }}</p>
+  <p><strong>Numero2:</strong> {{ operacion.numero2 }}</p>
+  <h4>Operaciones basicas de los dos números</h4>
+  <p><strong>Suma:</strong> {{ operacion.suma }}</p>
+  <p><strong>Resta:</strong> {{ operacion.resta }}</p>
+  <p><strong>Multiplicacion:</strong> {{ operacion.multiplicacion }}</p>
+  <p><strong>Division:</strong> {{ operacion.division }}</p>
+  
+  <div class="button-group">
+    
+    <button class="btn btn-danger" (click)="eliminarOperacion(i)">Eliminar Operaciones</button>
+  </div>
+
+ 
